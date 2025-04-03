@@ -47,9 +47,6 @@ const ImageSlider = () => {
 
   return (
     <div className="relative w-full h-[600px] overflow-hidden">
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-emergency from-primary-900/50 to-secondary-900/50 z-10" />
-      
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -61,7 +58,7 @@ const ImageSlider = () => {
           <img
             src={slide.image}
             alt={slide.alt}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         </div>
       ))}
