@@ -46,7 +46,10 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[600px] overflow-hidden bg-black">
+    <div className="relative w-full h-[600px] overflow-hidden">
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-emergency from-primary-900/50 to-secondary-900/50 z-10" />
+      
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -58,14 +61,14 @@ const ImageSlider = () => {
           <img
             src={slide.image}
             alt={slide.alt}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-cover"
           />
         </div>
       ))}
 
       {/* Navigation Arrows */}
       <button
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 transition-colors"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-primary-800/50 text-white p-2 rounded-full hover:bg-primary-700/75 transition-colors z-20"
         onClick={goToPreviousSlide}
         aria-label="Previous slide"
       >
@@ -74,7 +77,7 @@ const ImageSlider = () => {
         </svg>
       </button>
       <button
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 transition-colors"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-primary-800/50 text-white p-2 rounded-full hover:bg-primary-700/75 transition-colors z-20"
         onClick={goToNextSlide}
         aria-label="Next slide"
       >
@@ -85,14 +88,14 @@ const ImageSlider = () => {
 
       {/* Auto-play Toggle */}
       <button
-        className="absolute bottom-4 right-4 bg-black/50 text-white px-4 py-2 rounded-full hover:bg-black/75 transition-colors"
+        className="absolute bottom-4 right-4 bg-primary-800/50 text-white px-4 py-2 rounded-full hover:bg-primary-700/75 transition-colors z-20"
         onClick={toggleAutoPlay}
       >
         {isAutoPlaying ? 'Pause' : 'Play'}
       </button>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
         {slides.map((_, index) => (
           <button
             key={index}
