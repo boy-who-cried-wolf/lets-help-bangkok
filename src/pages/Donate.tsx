@@ -32,10 +32,10 @@ const Donate = () => {
               
               <h3 className="text-xl font-bold text-primary-700 mb-2">Important Notice</h3>
               <p className="text-gray-600 mb-4">
-                This website is not in production. Please do not input real information.
+                This is a demonstration website. Please do not enter any real personal or payment information.
               </p>
               <p className="text-gray-600 mb-6">
-                If you have any questions, please send an email to{' '}
+                For any inquiries, please contact us at{' '}
                 <a href="mailto:hdreamdev@gmail.com" className="text-primary-700 hover:underline">
                   hdreamdev@gmail.com
                 </a>
