@@ -59,19 +59,19 @@ const Donate = () => {
                     type="button"
                     className="px-4 py-2 border border-primary-700 text-primary-700 rounded-md hover:bg-primary-50"
                   >
-                    ฿500
+                    <span className="line-through">฿500</span>
                   </button>
                   <button
                     type="button"
                     className="px-4 py-2 border border-primary-700 text-primary-700 rounded-md hover:bg-primary-50"
                   >
-                    ฿1,000
+                    <span className="line-through">฿1,000</span>
                   </button>
                   <button
                     type="button"
                     className="px-4 py-2 border border-primary-700 text-primary-700 rounded-md hover:bg-primary-50"
                   >
-                    ฿2,000
+                    <span className="line-through">฿2,000</span>
                   </button>
                 </div>
                 <div className="mt-3">
