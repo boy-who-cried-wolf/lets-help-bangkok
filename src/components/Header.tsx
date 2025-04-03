@@ -25,16 +25,18 @@ const Header = () => {
 
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-lg' : 'bg-white/90 backdrop-blur-sm'
+      isScrolled 
+        ? 'bg-gradient-emergency from-primary-800 to-secondary-800 shadow-lg' 
+        : 'bg-gradient-emergency from-primary-800 to-secondary-800'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center group-hover:bg-primary-800 transition-colors">
-              <span className="text-white font-bold text-xl">LH</span>
+            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center group-hover:bg-secondary-100 transition-colors">
+              <span className="text-primary-700 font-bold text-xl">LH</span>
             </div>
-            <span className="text-xl font-bold text-primary-700 group-hover:text-primary-800 transition-colors">
+            <span className="text-xl font-bold text-white group-hover:text-secondary-200 transition-colors">
               Let's Help Bangkok
             </span>
           </Link>
@@ -43,39 +45,39 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className={`text-gray-600 hover:text-primary-700 py-2 transition-colors ${
-                location.pathname === '/' ? 'text-primary-700 font-semibold' : ''
+              className={`text-white hover:text-secondary-200 py-2 transition-colors ${
+                location.pathname === '/' ? 'text-secondary-200 font-semibold' : ''
               }`}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className={`text-gray-600 hover:text-primary-700 py-2 transition-colors ${
-                location.pathname === '/about' ? 'text-primary-700 font-semibold' : ''
+              className={`text-white hover:text-secondary-200 py-2 transition-colors ${
+                location.pathname === '/about' ? 'text-secondary-200 font-semibold' : ''
               }`}
             >
               About
             </Link>
             <Link
               to="/services"
-              className={`text-gray-600 hover:text-primary-700 py-2 transition-colors ${
-                location.pathname === '/services' ? 'text-primary-700 font-semibold' : ''
+              className={`text-white hover:text-secondary-200 py-2 transition-colors ${
+                location.pathname === '/services' ? 'text-secondary-200 font-semibold' : ''
               }`}
             >
               Services
             </Link>
             <Link
               to="/contact"
-              className={`text-gray-600 hover:text-primary-700 py-2 transition-colors ${
-                location.pathname === '/contact' ? 'text-primary-700 font-semibold' : ''
+              className={`text-white hover:text-secondary-200 py-2 transition-colors ${
+                location.pathname === '/contact' ? 'text-secondary-200 font-semibold' : ''
               }`}
             >
               Contact
             </Link>
             <Link
               to="/donate"
-              className="bg-primary-700 text-white px-6 py-2 rounded-md hover:bg-primary-800 transition-colors font-semibold"
+              className="bg-white text-primary-700 px-6 py-2 rounded-md hover:bg-secondary-100 transition-colors font-semibold"
             >
               Donate
             </Link>
@@ -83,12 +85,12 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-md hover:bg-white/10 transition-colors"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
             <svg
-              className="w-6 h-6 text-gray-600"
+              className="w-6 h-6 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -120,8 +122,8 @@ const Header = () => {
             <div className="flex flex-col space-y-4">
               <Link
                 to="/"
-                className={`text-gray-600 hover:text-primary-700 py-2 transition-colors ${
-                  location.pathname === '/' ? 'text-primary-700 font-semibold' : ''
+                className={`text-white hover:text-secondary-200 py-2 transition-colors ${
+                  location.pathname === '/' ? 'text-secondary-200 font-semibold' : ''
                 }`}
                 onClick={closeMenu}
               >
@@ -129,8 +131,8 @@ const Header = () => {
               </Link>
               <Link
                 to="/about"
-                className={`text-gray-600 hover:text-primary-700 py-2 transition-colors ${
-                  location.pathname === '/about' ? 'text-primary-700 font-semibold' : ''
+                className={`text-white hover:text-secondary-200 py-2 transition-colors ${
+                  location.pathname === '/about' ? 'text-secondary-200 font-semibold' : ''
                 }`}
                 onClick={closeMenu}
               >
@@ -138,8 +140,8 @@ const Header = () => {
               </Link>
               <Link
                 to="/services"
-                className={`text-gray-600 hover:text-primary-700 py-2 transition-colors ${
-                  location.pathname === '/services' ? 'text-primary-700 font-semibold' : ''
+                className={`text-white hover:text-secondary-200 py-2 transition-colors ${
+                  location.pathname === '/services' ? 'text-secondary-200 font-semibold' : ''
                 }`}
                 onClick={closeMenu}
               >
@@ -147,8 +149,8 @@ const Header = () => {
               </Link>
               <Link
                 to="/contact"
-                className={`text-gray-600 hover:text-primary-700 py-2 transition-colors ${
-                  location.pathname === '/contact' ? 'text-primary-700 font-semibold' : ''
+                className={`text-white hover:text-secondary-200 py-2 transition-colors ${
+                  location.pathname === '/contact' ? 'text-secondary-200 font-semibold' : ''
                 }`}
                 onClick={closeMenu}
               >
@@ -156,7 +158,7 @@ const Header = () => {
               </Link>
               <Link
                 to="/donate"
-                className="bg-primary-700 text-white px-6 py-2 rounded-md hover:bg-primary-800 transition-colors font-semibold text-center"
+                className="bg-white text-primary-700 px-6 py-2 rounded-md hover:bg-secondary-100 transition-colors font-semibold text-center"
                 onClick={closeMenu}
               >
                 Donate
