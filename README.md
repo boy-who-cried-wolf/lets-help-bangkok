@@ -1,96 +1,95 @@
-# Let's Help Bangkok
+# 🌍 Let's Help Bangkok
 
-A community-driven initiative to support Bangkok's recovery after the devastating earthquake.
+A responsive web application dedicated to supporting Bangkok's earthquake recovery efforts through community engagement and emergency response coordination.
 
-## Overview
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Website-green)](https://lets-help-bangkok.onrender.com)
+[![React](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.3.0-blue)](https://tailwindcss.com)
 
-This project is a React-based website built to coordinate relief efforts, provide essential services, and help rebuild Bangkok after the earthquake. The website serves as a central hub for:
+## 📱 Preview
 
-- Emergency information and updates
-- Donation collection
-- Volunteer coordination
-- Community support services
-- Contact and communication channels
+<div align="center">
+  <img src="public/preview.png" alt="Let's Help Bangkok Home Page" width="800" />
+</div>
 
-## Features
+## 🚀 Features
 
-- Responsive design for all devices
-- Modern UI with Tailwind CSS
-- Interactive image slider
-- Donation processing system
-- Volunteer registration
-- Contact form
-- Multi-language support (coming soon)
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Interactive UI**: Modern and intuitive user interface
+- **Multi-language Support**: Available in both English and Thai
+- **Accessibility**: WCAG compliant design
+- **Performance Optimized**: Fast loading and smooth transitions
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- React
-- TypeScript
-- Tailwind CSS
-- Vite
-- React Router
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **Routing**: React Router v6
+- **State Management**: React Context API
+- **Deployment**: Render
+- **Code Quality**: ESLint, Prettier
 
-## Getting Started
+## 📋 Pages
 
-### Prerequisites
+1. **Home**: Overview of the initiative and emergency updates
+2. **About**: Mission, timeline, and team information
+3. **Services**: Available support services and resources
+4. **Contact**: Multiple contact methods and inquiry form
+5. **Donate**: Secure donation platform with multiple payment options
 
-- Node.js (v14 or higher)
-- npm or yarn
+## 🚨 Important Notice
 
-### Installation
+This is a demonstration website created to showcase the potential of a disaster response platform. Please note:
+- All contact information is for demonstration purposes only
+- No actual donations or personal information should be submitted
+- For real inquiries, please contact: hdreamdev@gmail.com
+
+## 🛠️ Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/lets-help-bangkok.git
-cd lets-help-bangkok
-```
+   ```bash
+   git clone https://github.com/yourusername/lets-help-bangkok.git
+   ```
 
 2. Install dependencies:
-```bash
-npm install
-```
+   ```bash
+   cd lets-help-bangkok
+   npm install
+   ```
 
 3. Start the development server:
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
-4. Build for production:
-```bash
-npm run build
-```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
 
-## Project Structure
+## 🤝 Contributing
 
-```
-src/
-├── components/     # Reusable UI components
-├── pages/         # Page components
-├── assets/        # Static assets (images, etc.)
-└── App.tsx        # Main application component
-```
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Contributing
+## 📝 License
 
-We welcome contributions from the community. Please follow these steps:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+## 👨‍💻 Developer
 
-## Contact
+**Rowell Camero**  
+Full Stack Developer
 
-For any inquiries or support, please reach out to us through our official channels.
+- [Portfolio](https://rowell-camero-portfolio.onrender.com/)
+- [LinkedIn](https://linkedin.com/in/rowell-camero-67b868249)
 
-## License
+## 🙏 Acknowledgments
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- Emergency Response Teams
+- Community Volunteers
+- Open Source Community
+- All contributors and supporters
 
-## Acknowledgments
+---
 
-- All volunteers and contributors
-- Emergency response teams
-- Community organizations
-- Supporters and donors
+<div align="center">
+  <p>Made with ❤️ for Bangkok</p>
+  <p>© {new Date().getFullYear()} Let's Help Bangkok. All rights reserved.</p>
+</div>
